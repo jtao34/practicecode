@@ -1,6 +1,7 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         #all passed but took too long, may need hashmap
+        #try bi-direction bfs some time
         def isWordladder(pre, cur):
             count = 0
             for i in range(len(beginWord)):
